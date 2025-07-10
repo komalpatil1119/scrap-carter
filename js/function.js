@@ -558,25 +558,19 @@ $('#menu').slicknav({
 
 	//did u know
 
-	const didYouKnowSwiper = new Swiper('.did-you-know-swiper', {
+	var swiper = new Swiper(".didYouKnowSwiper", {
 		loop: true,
-		grabCursor: true,
-		spaceBetween: 20,
+		autoplay: {
+		  delay: 5000,
+		  disableOnInteraction: false,
+		},
 		pagination: {
-		el: '.did-you-know-pagination',
-		clickable: true,
+		  el: ".swiper-pagination",
+		  clickable: true,
+		  dynamicBullets: true,
 		},
-		navigation: {
-		nextEl: '.did-you-know-next',
-		prevEl: '.did-you-know-prev',
-		},
-		breakpoints: {
-		0: { slidesPerView: 1 },
-		768: { slidesPerView: 2 },
-		992: { slidesPerView: 4 }
-		}
-	});
-  
+	  });
+	  
 
 	// heafer file
 

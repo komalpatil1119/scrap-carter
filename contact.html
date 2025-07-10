@@ -81,7 +81,7 @@
 			<div class="responsive-menu"></div>
 		</div>
 	</header>
-   <!-- <!-- <li><a href="ResidentialHousingSocieties.html">Our Clients</a></li> --> -->
+  <!-- <li><a href="ResidentialHousingSocieties.html">Our Clients</a></li> -->
    
    <!-- Page Header Start -->
 	<div class="page-header">
@@ -385,9 +385,9 @@
                     <div class="col-md-6">
                         <!-- Footer Privacy Policy Start -->
                         <div class="footer-privacy-policy">
-                            <ul>
-                                <li><a href="#">terms & condition</a></li>
-                                <li><a href="#">privacy policy</a></li>
+                             <ul>
+                                <li><a href="TermsAndConditions.html">terms & condition</a></li>
+                                <li><a href="PrivacyPolicy.html">privacy policy</a></li>
                             </ul>
                         </div>
                         <!-- Footer Privacy Policy End -->
@@ -402,13 +402,14 @@
         <a href="" data-bs-toggle="modal" data-bs-target="#step1Modal" class="btn-default btn-highlighted">SCHEDULE A PICKUP &nbsp;&nbsp;&nbsp;</a>
     </div> -->
     
+    
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
       <div class="modal-content">
       
           <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Schedule a Scrap Pickup</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 class="modal-title" id="exampleModalLabel">Schedule a Scrap Pickup</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
   
           <div class="modal-body">
@@ -453,18 +454,20 @@
           </div>
   
           <div class="modal-footer text-center">
-          <button type="submit" form="pickupForm" class="btn btn-primary">Submit Request</button>
+          <button type="submit" form="pickupForm" class="btn btn-primary">Submit Now</button>
           </div>
   
       </div>
       </div>
   </div>
-  
-  
   <!-- New Schedule pop up -->
   <div class="modal fade" id="step1Modal" tabindex="-1">
   <div class="modal-dialog">
   <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Schedule a Scrap Pickup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
     <div class="row modal-popup">
       <div class="col-md-12 col-12 mb-3 d-flex">
           <label for="name" class="form-label" style="width: 65%;">Enter Mobile Number* :</label>
@@ -481,6 +484,10 @@
   <div class="modal fade" id="otpModal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
       <div class="row modal-popup">
           <div class="col-md-12 col-12 mb-3 d-flex">
               <label for="name" class="form-label" style="width: 45%;">Verify OTP* :</label>
@@ -499,7 +506,7 @@
      
     <div class="modal-content">
       <div class="modal-header">
-      <h5 class="modal-title">Schedule Pickup</h5>
+          <h5 class="modal-title">Schedule Pickup</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <form id="pickupForm">
@@ -507,14 +514,22 @@
           <input type="text" class="form-control mb-2" placeholder="Location (Landmark/Pin)" required>
           <select class="form-select mb-2" required>
             <option>Select Service Type</option>
-            <option>Scrap Pickup</option>
-            <option>Electronics</option>
+            <option>Residential / Housing Society Scrap Collection</option>
+            <option>Offices</option>
+            <option>Hotels and Restaurant</option>
+            <option>Construction Side Scrap</option>
           </select>
           <input type="date" class="form-control mb-2" id="pickupDate" required>
-          <input type="time" class="form-control" id="pickupTime" required>
+          <!-- <input type="time" class="form-control" id="pickupTime" required> -->
+         <select class="form-select mb-2" required>
+            <option>Select Time</option>
+            <option>9:00AM to 12:00PM</option>
+            <option>12:00AM to 6:00PM</option>
+            <option>3:00AM to 6:00PM</option>
+          </select>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-success" type="submit">Check Available Slots</button>
+          <button class="btn btn-success" type="submit">Subtmit Now</button>
         </div>
       </form>
     </div>
@@ -525,7 +540,8 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-          <h5>Available Time Slots</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Available Time Slots</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" id="slotOutput">
        
@@ -536,7 +552,6 @@
     </div>
   </div>
   </div>
-   
   <!-- Know Your Waste modal -->
   <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
   <div class="modal-dialog">
@@ -574,7 +589,7 @@
       </div>
   
       <div class="modal-footer text-center">
-        <button type="submit" form="pickupForm" class="btn btn-primary">Submit Request</button>
+        <button type="submit" form="pickupForm" class="btn btn-primary">Submit Now</button>
       </div>
   
     </div>
@@ -587,85 +602,57 @@
     <div class="modal-content">
   
       <div class="modal-header">
-        <h5 class="modal-title" id="partnerModalLabel">Partner Application Form</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
+          <h5 class="modal-title" id="partnerModalLabel">Partner with Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
   
-      <form id="partnerForm" enctype="multipart/form-data">
-        <div class="modal-body">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label class="form-label">Business Name *</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Contact Person Name *</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Mobile Number *</label>
-              <input type="tel" class="form-control" pattern="[0-9]{10}" required>
-              <small class="form-text text-muted">OTP verification preferred</small>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Email Address *</label>
-              <input type="email" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Business Type *</label>
-              <select class="form-select" required>
-                <option value="">Select...</option>
-                <option>Housing</option>
-                <option>Construction</option>
-                <option>Hotel and Restaurant</option>
-                <option>Office</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">City *</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Area *</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Pickup Vehicle Availability *</label>
-              <select class="form-select" required>
-                <option value="">Select...</option>
-                <option>Yes</option>
-                <option>No</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">Years of Experience (Optional)</label>
-              <input type="number" class="form-control">
-            </div>
-            <div class="col-md-6">
-              <label class="form-label">PAN / Aadhar / Business Reg. No *</label>
-              <input type="text" class="form-control" required>
-            </div>
-            <div class="col-md-12">
-              <label class="form-label">Upload Document (GST, License, or ID proof)</label>
-              <input type="file" class="form-control" accept=".pdf,.jpg,.png,.jpeg">
-            </div>
-            <div class="col-md-12">
-              <label class="form-label">Message / Comments (Optional)</label>
-              <textarea class="form-control" rows="3"></textarea>
-            </div>
+        <form id="partnerForm">
+          <div class="modal-body">
+            <div class="row">
+                  <div class="col-md-6 col-12">
+                      <div class="mb-3">
+                          <label for="category" class="form-label">Category *</label>
+                          <select class="form-select" id="category" required>
+                            <option value="">Select Category</option>
+                            <option value="Housing Society">Housing Society</option>
+                            <option value="Restaurant & Hotel">Restaurant & Hotel</option>
+                            <option value="Business & Office">Business & Office</option>
+                            <option value="Others">Others</option>
+                          </select>
+                        </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                      <div class="mb-3">
+                          <label for="entityName" class="form-label" id="entityLabel">Society/Restaurant/Business / Entity Name *</label>
+                          <input type="text" class="form-control" id="entityName" required>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                      <div class="mb-3">
+                          <label for="contactName" class="form-label">Contact Person Name *</label>
+                          <input type="text" class="form-control" id="contactName" required>
+                      </div>
+                  </div>
+      
+                  <div class="col-md-6 col-12">
+                      <div class="mb-3">
+                          <label for="mobile" class="form-label">Mobile Number *</label>
+                          <input type="tel" class="form-control" id="mobile" pattern="[0-9]{10}" required>
+                      </div>
+                  </div>
+                  <div class="col-md-12 col-12">
+                      <div class="mb-3">
+                          <label for="address" class="form-label">Location / Address *</label>
+                          <textarea class="form-control" id="address" rows="2" required></textarea>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-  
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-success">Submit</button>
-        </div>
-  
-        <!-- Confirmation Message -->
-        <div id="formConfirmMsg" class="text-center text-success p-2 d-none">
-          ✅ Thank you! Your application has been submitted.
-        </div>
-      </form>
+          <div class="modal-footer text-center">
+              <button type="submit" form="pickupForm" class="btn btn-primary">Submit Now</button>
+            </div>
+         
+        </form>
     </div>
   </div>
   </div>
@@ -755,6 +742,6 @@
         new bootstrap.Modal(document.getElementById('slotModal')).show();
       };
       </script>       
-
 </body>
+
 </html>
